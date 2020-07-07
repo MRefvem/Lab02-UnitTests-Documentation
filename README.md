@@ -24,9 +24,9 @@ Select ```File``` -> ```Open``` -> ```Project/Solution```
 
 Next navigate to the location you cloned the Repository.
 
-Double click on the ```Lab01-About-Me``` directory.
+Double click on the ```Lab02-UnitTests-Documentation``` directory.
 
-Then select and open ```AboutMe.sln```
+Then select and open ```UnitTests.sln```
 
 ---
 

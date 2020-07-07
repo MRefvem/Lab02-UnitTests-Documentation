@@ -1,0 +1,13 @@
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.exe
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.deps.json
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.runtimeconfig.json
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.runtimeconfig.dev.json
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.dll
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.pdb
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.csprojAssemblyReference.cache
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.AssemblyInfoInputs.cache
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.AssemblyInfo.cs
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.csproj.CoreCompileInputs.cache
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.dll
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.pdb
+C:\Users\mkref\source\repos\Lab02-UnitTests-Documentation\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.genruntimeconfig.cache
