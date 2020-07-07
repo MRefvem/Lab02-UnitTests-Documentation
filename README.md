@@ -34,11 +34,11 @@ Then select and open ```UnitTests.sln```
 ***[Add screenshots of your application in action]***
 
 #### Application Start
-![Image 1](https://via.placeholder.com/750x500)
+![Image 1](application-start.png)
 #### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
+![Image 2](using-the-application.png)
 #### Application End
-![Image 1](https://via.placeholder.com/750x500)
+![Image 3](application-end.png)
 
 ---
 
