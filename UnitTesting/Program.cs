@@ -2,7 +2,7 @@
 
 namespace UnitTesting
 {
-    class Program
+    public class Program
     {
         /// <summary>
         /// Variable to hold the current Balance of the account
@@ -25,9 +25,8 @@ namespace UnitTesting
         /// <returns>decimal</returns>
         static public decimal ViewBalance()
         {
-            Console.WriteLine($"Your current balance is ${Balance}.00");
 
-            UserInterface();
+            Console.WriteLine($"Your current balance is ${Balance}.00");
             return Balance;
         }
 
@@ -35,30 +34,23 @@ namespace UnitTesting
         /// Subtracts money from the balance
         /// </summary>
         /// <returns>decimal</returns>
-        static public decimal Withdraw()
+        static public decimal Withdraw(decimal withdrawalAmount)
         {
-            Console.WriteLine("How much would you like to withdraw from your account?");
-
-            string withdrawalSelection = Console.ReadLine();
-            int withdrawalAmount = Convert.ToInt32(withdrawalSelection);
 
             if (withdrawalAmount > Balance)
             {
-                Console.WriteLine("Insuficient funds.");
-                UserInterface();
+                Console.WriteLine("Insufficient funds");
                 return Balance;
             }
             else if (withdrawalAmount < 0)
             {
                 Console.WriteLine("Cannot withdraw amount less than $0.00.");
-                UserInterface();
                 return Balance;
             }
             else
             {
-                Balance = Balance - withdrawalAmount;
+            Balance = Balance - withdrawalAmount;
                 Console.WriteLine($"You withdrew ${withdrawalAmount}.00. Your new balance is ${Balance}.00.");
-                UserInterface();
                 return Balance;
             }
 
@@ -68,24 +60,18 @@ namespace UnitTesting
         /// Adds money to the balance
         /// </summary>
         /// <returns>decimal</returns>
-        static public decimal Deposit()
+        static public decimal Deposit(decimal depositAmount)
         {
-            Console.WriteLine("How much would you like to deposit into your account?");
-
-            string depostSelection = Console.ReadLine();
-            int depositAmount = Convert.ToInt32(depostSelection);
 
             if (depositAmount < 0)
             {
                 Console.WriteLine("Cannot deposit a negative cash value.");
-                UserInterface();
                 return Balance;
             }
             else
             {
                 Balance = Balance + depositAmount;
                 Console.WriteLine($"You deposited ${depositAmount}.00. Your new balance is ${Balance}.00.");
-                UserInterface();
                 return Balance;
             }
 
@@ -96,37 +82,55 @@ namespace UnitTesting
         /// </summary>
         public static void UserInterface()
         {
-            int userChoice = 0;
 
-            Console.WriteLine("Welcome to the ATM machine");
-            Console.WriteLine("1. View Balance");
-            Console.WriteLine("2. Withdraw");
-            Console.WriteLine("3. Deposit");
-            Console.WriteLine("4. Exit");
+            bool running = true;
 
-            string selection = Console.ReadLine();
-            userChoice = Convert.ToInt32(selection);
+            while (running == true)
+            {
 
-            if (userChoice == 1)
-            {
-                ViewBalance();
+                Console.WriteLine("Welcome to the ATM machine");
+                Console.WriteLine("1. View Balance");
+                Console.WriteLine("2. Withdraw");
+                Console.WriteLine("3. Deposit");
+                Console.WriteLine("4. Exit");
+
+                string selection = Console.ReadLine();
+                int userChoice = Convert.ToInt32(selection);
+
+                if (userChoice == 1)
+                {
+                    ViewBalance();
+                }
+                else if (userChoice == 2)
+                {
+                    Console.WriteLine("How much would you like to withdraw from your account?");
+
+                    string withdrawalSelection = Console.ReadLine();
+                    int withdrawalAmount = Convert.ToInt32(withdrawalSelection);
+
+                    Withdraw(withdrawalAmount);
+
+                }
+                else if (userChoice == 3)
+                {
+                    Console.WriteLine("How much would you like to deposit into your account?");
+
+                    string depostSelection = Console.ReadLine();
+                    int depositAmount = Convert.ToInt32(depostSelection);
+
+                    Deposit(depositAmount);
+
+                }
+                else if (userChoice == 4)
+                {
+
+                    running = false;
+
+                }
             }
-            else if (userChoice == 2)
-            {
-                Withdraw();
-            }
-            else if (userChoice == 3)
-            {
-                Deposit();
-            }
-            else if (userChoice == 4)
-            {
-                Console.WriteLine("The program has ended");
-            }
-            else
-            {
-                Console.WriteLine("The program has ended");
-            }
+
+            Console.WriteLine("The program has ended");
+            return;
 
         }
     }
