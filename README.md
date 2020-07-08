@@ -41,7 +41,8 @@ Then select and open ```UnitTests.sln```
 
 ---
 
-### Change Log  
+### Change Log
+1.4: *Fully functional UserTests* - 7 Jul 2020  
 1.3: *Added images to README.md* - 7 Jul 2020  
 1.2: *Lab 02 program complete* - 7 Jul 2020  
 1.1: *updated README.md, will require another update* - 7 Jul 2020  
